@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced HTML5 Elements and Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+    form {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Welcome to the Advanced HTML5 Demo</h1>
+    <p>This page showcases ordered lists, images, tables, forms, and multimedia.</p>
+  </header>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Topics Covered</h2>
+    <ol type="I">
+      <li>HTML5 Elements</li>
+      <li>Form Validation</li>
+      <li>Audio & Video Embedding</li>
+      <li>Tables and Lists</li>
+    </ol>
+  </section>
+
+  <!-- External Image from Pexels -->
+  <section>
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Nature Scene" width="400">
+  </section>
+
+  <!-- Contacts Table -->
+  <section>
+    <h2>Contact List</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>Nairobi, Kenya</td>
+        <td>+254700000001</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary Wambui</td>
+        <td>Kampala, Uganda</td>
+        <td>+256700000002</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>Peter Otieno</td>
+        <td>Dar es Salaam, Tanzania</td>
+        <td>+255700000003</td>
+        <td>peter@example.com</td>
+      </tr>
+      <tr>
+        <td>Amina Yusuf</td>
+        <td>Mombasa, Kenya</td>
+        <td>+254700000004</td>
+        <td>amina@example.com</td>
+      </tr>
+      <tr>
+        <td>David Kimani</td>
+        <td>Kigali, Rwanda</td>
+        <td>+250700000005</td>
+        <td>david@example.com</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      
+      <!-- Name -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Dropdown -->
+      <label for="course">Select a course:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose a course --</option>
+        <option value="html">HTML & CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="python">Python Programming</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female" style="display:inline;">Female</label>
+
+      <!-- Checkboxes -->
+      <label>Skills (select at least one):</label>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html" style="display:inline;">HTML</label>
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css" style="display:inline;">CSS</label>
+      <input type="checkbox" id="js" name="skills" value="JavaScript">
+      <label for="js" style="display:inline;">JavaScript</label>
+
+      <!-- Submit Button -->
+      <br><br>
+      <input type="submit" value="Register">
+
+    </form>
+  </section>
+
+  <!-- Multimedia Section -->
+  <section>
+    <h2>Multimedia Elements</h2>
+
+    <!-- Audio -->
+    <p>Listen to background music:</p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video -->
+    <p>Watch this sample video:</p>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Advanced HTML5 Demo by Christine Kerubo</p>
+  </footer>
+
+</body>
+</html>
